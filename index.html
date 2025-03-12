@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Renta de Casa Vacacional</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Renta de Casa Vacacional</h1>
+    </header>
+
+    <section class="galeria">
+        <h2>Galería</h2>
+        <div class="imagenes">
+            <img src="imagenes_casa/Image4 .jpg" alt="Casa vacacional 1">
+            <img src="imagenes_casa/Image7.jpg" alt="Casa vacacional 2">
+            <img src="imagenes_casa/Image9.jpg" alt="Casa vacacional 3">
+        </div>
+    </section>
+
+    <section class="ubicacion">
+        <h2>Ubicación</h2>
+        <iframe 
+            src="https://maps.app.goo.gl/qgR7tZWj4QVPRvPR9 "
+            width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy">
+        </iframe>
+    </section>
+
+    <section class="contacto">
+        <h2>Reserva tu estancia</h2>
+        <form action="https://formspree.io/f/tu-correo" method="POST">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+
+            <label for="email">Correo Electrónico:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="Dia de entrada">Dia de entrada:</label>
+            <input type="date" id="Dia de entrada" required>
+
+            <label for="Telefono">Telefono:</label>
+            <input type="tel" id="Telefono" required>
+
+            <label for="mensaje">Mensaje:</label>
+            <textarea id="mensaje" name="mensaje" required></textarea>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2025 Renta de Casa Vacacional</p>
+    </footer>
+
+</body>
+</html>
